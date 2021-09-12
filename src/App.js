@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.css'
+import {useState} from 'react'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [toDos,setToDos]= useState([])
+  const [ToDo,setToDo]= useState('')
+    return (
+    <div className="app">
+      <div className="mainHeading">
+        <h1>ToDo List</h1>
+      </div>
+      <div className="subHeading">
+        <br />
+        <h2>Hi !, Musfar it's a pleasant day 🌝 ☕ </h2>
+      </div>
+      <div className="input">
+        <input value={toDos} onchange={(e)=>setToDo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
+        <i className="fas fa-plus"></i>
+      </div>
+      <div className="toDos">
+        <div className="toDo">
+          <div className="left">
+            <input type="checkbox" name="" id="" />
+            <p>React Todo Note</p>
+          </div>
+          <div className="right">
+            <i className="fas fa-times"></i>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
