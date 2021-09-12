@@ -1,8 +1,8 @@
 import './App.css'
 import {useState} from 'react'
 function App() {
-  const [toDos,setToDos]= useState([])
-  const [ToDo,setToDo]= useState('')
+  const [toDos,setToDos] = useState([])
+  const [ToDo,setToDo] = useState('')
     return (
     <div className="app">
       <div className="mainHeading">
@@ -10,10 +10,10 @@ function App() {
       </div>
       <div className="subHeading">
         <br />
-        <h2>Hi !, Musfar it's a pleasant day 🌝 ☕ </h2>
+        <h2>whoop, it's Wednesday 🌝 ☕ </h2>
       </div>
       <div className="input">
-        <input value={toDos} onchange={(e)=>setToDo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
+        <input value={toDos} onChange={(e)=>setToDo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
         <i className="fas fa-plus"></i>
       </div>
       <div className="toDos">
