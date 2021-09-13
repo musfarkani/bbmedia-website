@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #020631;
+  background-color: #e7c504cc;
 }
 
 .app {
@@ -20,7 +20,7 @@ body {
 
 .app h1,
 h2 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .app .input {
